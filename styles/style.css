@@ -10,6 +10,8 @@
 }
 
 .header {
+  display: flex;
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -18,10 +20,99 @@
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-  height: 568px;
+  position: absolute;
   width: 568px;
+  height: 568px;
+  top: 64px;
+  right: 0;
+  background-color: #2F80ED;
+  z-index: -1;
 }
 
+.header__title {
+  align-self: center;
+  margin: 0 0 0 64px;
+  font-size: 102px;
+  font-weight: bold;
+  line-height: 96px;
+  max-width: 730px;
+
+}
+
+.header__subtitle {
+  display: block;
+  position: absolute;
+  line-height: 25px;
+  font-size: 18px;
+  max-width: 388px;
+  left: 64px;
+  bottom: 30px;
+  /*margin: 0;*/
+  font-weight: normal;
+}
+
+.header__link {
+  color: #2F80ED;
+}
+
+.header__main-illustration {
+  position: absolute;
+  height: 608px;
+  width: 765px;
+  bottom: 0;
+  right: 0;
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo_place_header {
+  margin-top: 30px;
+  margin-left: 64px;
+  background-image: url("../images/logo_place_header.svg");
+  position: absolute;
+}
+
+.description {
+  display: flex;
+}
+
+.two-columns {
+  display: flex;
+  margin: 100px auto;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.two-columns__main-text {
+  line-height: 34px;
+  font-size: 24px;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  margin: 0 0 30px 0;
+}
+
+.two-columns__brief {
+  line-height: 1.2;
+  font-size: 18px;
+  max-width: 175px;
+  color: #2F80ED;
+  margin: 0;
+  font-weight: normal;
+}
+
+.logo_place_footer {
+  margin-top: 30px;
+  margin-left: 64px;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
