@@ -138,17 +138,26 @@
   text-align: center;
 }
 
+.section-title_theme_black {
+  margin: 90px 0 0 0;
+  color: white;
+}
+
+.section-subtitle_theme_black {    
+  color: white;
+}
+
 .table {
   display: flex;
   justify-content: space-between;
   width: 1100px;
   flex-wrap: wrap;
-  margin: 0 0 100px 0;
+  margin: 0 0 100px 0;  
 }
 
-.table__cell {
-  width: 250px;
-  margin: 60px 0 0 0;
+.table_theme_dark {
+  margin: 0 0 90px;
+  z-index: 1;
 }
 
 .table__heading {
@@ -156,6 +165,17 @@
   font-size: 24px;
   font-weight: bold;
   margin: 0;
+}
+
+.table__cell {
+  width: 250px;    
+  margin: 60px 0 0 0;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin: 80px 0 0 0;
 }
 
 .table__text {
@@ -204,14 +224,26 @@
   color: #2F80ED;
 }
 
+.kaufman {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.triangle {
+  position: absolute;
+  top: 0;
+  width: 877px;
+  height: 877px;
+  right: -210px;  
+}
+
 .logo_place_footer {
   margin-top: 30px;
   margin-left: 64px;
-}
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
 }
