@@ -273,7 +273,7 @@
 
 .logo_place_footer {
   left: 0;
-  top: 0;  
+  top: 0;
   background-image: url("../images/logo_place_footer.svg");
 }
 
@@ -299,11 +299,11 @@
 }
 
 .footer__column-link {
-  margin: 0;        
+  margin: 0;
   position: relative;
   color: white;
   line-height: 30px;
   font-size: 18px;
-  font-weight: normal;    
+  font-weight: normal;
   text-decoration: none;
 }
