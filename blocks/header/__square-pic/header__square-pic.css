@@ -7,5 +7,5 @@
     background-color: #2F80ED;
     z-index: -1;
     background-size: cover;
-    animation: rotation 20s linear infinite;
+    /*animation: rotation 20s linear infinite;*/
   }
